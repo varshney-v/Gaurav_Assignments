@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 200px;
+    }
+    footer {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    header nav.container {
+        width: auto;
+        height: 100px;
+        background-color: black;
+        border: 2px solid yellowgreen;
+        border-radius: 7px;
+    }
+    .logo{
+        width: 10px;
+        height: 10px;
+    }
+    .image_box {
+        height: 30px;
+    }
+    .image_box li{
+        display: block;
+        width: 60px;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        border: 2px solid grey;
+        color: aliceblue;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 07px;
+    }
+    img {
+        float: left;
+        width: 60px;
+        height: 60px;
+        margin-left:-550px ;
+    }
+    .menu_box {
+        display: block;
+        float: right;
+        margin-left: 300px;
+    }
+    .menu_inner_box li {
+        display: inline-block;
+        padding: 18px;
+        position: relative;
+    }
+    .jobs_box,
+    .contact_us_box {
+        display: none;
+        position: absolute;
+        /* background-color: rgb(241, 231, 231); Add this for better visibility */
+        min-width: 120px; 
+        padding-left: 8px;
+        padding-right: 12px;
+        color: black;
+    }
+    .jobs_box li a,
+    .contact_us_box li a {
+        background-color: black;
+    }
+    .menu_inner_box li:hover .jobs_box,
+    .menu_inner_box li:hover .contact_us_box {
+        display: block;
+    }
+    ul.jobs_box ul.contact_us_box li {
+        clear: both;
+        width: 100%;
+    }
+    a:hover {
+        color: aqua;
+        background-color: brown;
+        cursor: pointer;
+    }
+    .menu_inner_box:hover .dropdown-options {
+        display: block;
+    }
+     /* Media Query for Responsive Design */
+    @media screen and (max-width: 768px) {
+        .menu_box {
+            display: none;
+        }
+            /* float: none;
+            text-align: center;
+        }
+        .menu_inner_box li {
+            display: block;
+            padding: 10px;
+        }
+        .menu_inner_box li:hover .jobs_box,
+        .menu_inner_box li:hover .contact_us_box {
+            display: block;
+            position: static;
+            background-color: transparent;
+            min-width: auto;
+        } */
+    }
+    table {
+        width: 100%;
+        height: 400px;
+        background-color: black;
+    }
+    td a{
+        border: 0;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 07px;
+    }
+    td th {
+        border: 0;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 07px;
+    }
+    td {
+        width: 33%;
+        height: 150px;
+    }
+    td a:hover {
+        color: aqua;
+        background-color: rgba(252, 237, 237, 0);
+        cursor: pointer;
+    }
+    .box {
+        width : auto;
+        background-color :black;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .container {
+        width : auto;
+        background-color :black;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .first_container {
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+    }
+    .second_container {
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+    }
+    .third_container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: justify;
+
+    }
+    span {
+        margin: 10px;
+        font-size: 14px;
+    }
+</style>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <ul class="image_box">
+                    <li>
+                        <img src="Header.html/JOBHUB.png" alt="JOBHUB">
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_box">
+                <ul class="menu_inner_box">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a>
+                        <ul class="jobs_box">
+                            <li><a href="#">Fresh Job</a></li>
+                            <li><a href="#">Old Jobs</a></li>
+                            <li><a href="#">Upcoming</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a>
+                        <ul class="contact_us_box">
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Phone</a></li>
+                            <li><a href="#">Address</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Login/signup</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="table"><center>
+            <table border="01" cellspacing="5" cellpadding="6" >
+            <tr>
+                <td><center>
+                    <table>
+                        <tr>
+                            <th>Recent Jobs</th>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink">
+                                <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                            <center>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                </marquee>
+                            </center>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <th>Upcoming Jobs</th>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink"><marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                                <center>
+                                    <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                </center></marquee>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td >
+                    <table>
+                        <tr>
+                            <th>Expired Jobs</th>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink"><marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                                <center>
+                                    <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br>
+                                <a href="#">jobbb</a> <br> 
+                                </center></marquee>
+                            </td></center>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table></center>
+        </div>
+    </section>
+    <footer>
+        <table>
+            <tr><td><div class="box">
+                <span>We're here to help</span>
+                <span>
+                    Visit our Help Centre for answers to common questions or contact us directly.
+                </span>
+                <span><a href="#">Help center</a></span>
+                <span><a href="#">contact us</a></span>
+            </div></td>
+            <td><div class="container">
+                <table>
+                    <tr>
+                        <td><span class="first_container"> <a href="">Indeed</a>
+                            <a href="#">About Indeed</a>
+                            <a href="#">Press</a>
+                            <a href="#">Security</a>
+                            <a href="#">Accessibility at Indeed</a>
+                            <a href="#">Work at Indeed</a>
+                        </span></td>
+                        <td>
+                        <span class="second_container">
+                            <a href="#">Employers</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">Terms</a>
+                            <a href="#">Privacy Centre</a>
+                            <a href="#">Privacy policy</a>
+                            <a href="#">Accessibility at Indeed</a>
+                            <a href="#">Work at Indeed</a></span></td>
+                        <td><span class="third_container"> <a href="#">Resources</a>
+                            <a href="#">Hiring resources</a>
+                            <a href="#">How to write job descriptions</a>
+                            <a href="#">Guide to hiring with Indeed</a>
+                            <a href="#">Indeed Events</a>
+                        </span></td></tr></table>
+            </div></td></tr>
+        </table>
+    </footer>
+</body>
+</html>
